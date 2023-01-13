@@ -4,10 +4,10 @@
 }
 .navbar{
     display: flex;
+
 }
 .nav_list{
     width: 50%;
-    justify-content: center;
     align-items: center;
     display: flex;
 }
@@ -44,7 +44,36 @@
 #search{
     padding: 5px;
     font-size: 17px;
+    border: 2px solid grey;
 }
 .background{
-    background: rgba(0, 0, 0, 0, 0.7) url("/img/laptopbg.jpg");
+    background: rgba(0, 0, 0, 0.7) url("/img/laptopbg.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
 }
+.box_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+}
+.secondhalf img{
+    width: 70%;
+ 
+    border: p4px solid white;
+    border-radius: 100px;
+}
+.firsthalf{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.secondhalf{
+    width: 30%;
+}
+
+ 
