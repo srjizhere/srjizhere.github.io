@@ -4,34 +4,98 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-
-.navbar{
-    background-color: rgb(152, 152, 152);
-    font-family: 'Fira Sans', sans-serif;
-    width: 100vw;
-    height: 16vh;
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(1, 1, 29, 0.961),rgba(0, 0, 0, 0.904)),url(./img/Wallp.webp);
+   background-size: cover;
+   background-position: center;
+   padding: 0 0%;
+   position: relative;
+}
+nav{
     display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-.navbar nav ul{
-    display: flex;
-    justify-content: space-evenly;
+
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 1%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: auto 25px;
+    font-size: larger;
+    transition: 1s ease-in-out;
+}
+nav ul li a:hover{
+color: rgb(179, 245, 232);
+font-weight: bolder;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position:absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+    width: 50%;
 }
 
-.navbar nav li{
-   list-style: none;
-   font-size: 23px;
-   padding: 1%;
+
+.text_box{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    left: 5px;
+    cursor: pointer;
+
 }
+.text_box >p{
+    color:transparent;
+    letter-spacing: .3em;
+    font-size: 35px;
+    line-height: 60px;
+    margin-left: 10px;
+    -webkit-text-stroke:1px #fff ;
+    background: url(/img/images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0 ;
+    animation: back 10s linear infinite ;
+}
+@keyframes back{ 
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+
+
 .main{
-    background-color: yellow;
+    /* background-color: yellow; */
     width: 90vw;
 }
 
 .infoContainer{
-    background-color: rgb(255, 0, 255);
+    /* background-color: rgb(255, 0, 255); */
     height: 58vh;
     width: 80vw;
     margin: auto;
@@ -40,6 +104,7 @@
     justify-content: space-around;
 }
 .devinfo{
+    color:white;
     display: flex;
     justify-content: center;
     font-family: 'Source Code Pro', monospace;
@@ -55,7 +120,11 @@
     font-family: 'Fira Sans', sans-serif;
 }
 .about{
-    font-size: 35px;
+    font-size: 30px;
+    line-height: 2em;
+    margin-bottom: 10%;
+    font-weight: bolder;
+    color: rgb(255, 34, 0);
     
 }
 .moreabout{
