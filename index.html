@@ -41,7 +41,7 @@
         successfully manage a team of developers.
       </div>
       <div class="buttons">
-        <button>Download CV</button>
+       <a href="/img/Suraj_Patil_Resume.pdf"  download="Suraj_Patil_Resume" onclick="resume()"><button > Download CV</button></a> 
         <button>Contact Me</button>
       </div>
 
@@ -174,8 +174,8 @@
 <div id="contactme">
   <h1 onclick="githubdir()" class="contactline">Github</h1>
   <h1 onclick="linkedindir()" class="contactline">Linkedin</h1>
-  <h1 onclick="phonenumber()" class="contactline">7498241136</h1>
-  <h1 onclick="gmaildir()" class="contactline">bhiapatil@gmail.com</h1>
+  <h1 onclick="phonenumber()"  id="phno" class="contactline ">7498241136</h1>
+  <h1 onclick="gmaildir()" id="gmaildir" class="contactline">bhiapatil@gmail.com</h1>
 </div>
 
 
@@ -201,7 +201,7 @@
        proxy (srjizhere) {
          return fetch(`https://your-proxy.com/github?user=${srjizhere}`)
        }
-    }).then(r => r.text())
+    }).then()
 </script>
 
 </html>
