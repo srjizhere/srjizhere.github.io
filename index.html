@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Suraj Portfolio</title>
     <link rel="stylesheet" href="style.css"/>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
   </head>
  <body>
   <div class="container">
@@ -13,18 +16,18 @@
       <div class="text_box">
       <p>&#10094SURAJ&#10095&#10148</p></div>
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Skils</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">Progress</a></li>
+        <li><a href="#infocont">Home</a></li>
+        <li><a href="#skillbox">Skils</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#githubstats">Progress</a></li>
       </ul>
 
     </nav>
-    
-<div class="main">
+    <div  id="infocont"></div>
+<div  class="main">
 
-  <div class="infoContainer">
+  <div  class="infoContainer">
     <div class="devinfo">
       <div class="hello">Hi,I am  </div>
       <div class="name">Suraj Patil</div>
@@ -43,7 +46,7 @@
       </div>
 
     </div>
-    <div class="devpic"><img src="/img/humantran.png" alt="Suraj"></div>
+    <div class="devpic"><img src="/img/679pass.jpg" alt="Suraj"></div>
   </div>
 
 
@@ -95,7 +98,7 @@
   </div>
   
 </div>
-<h1 class="text_box givit">PROJECTS</h1>
+<h1 id="project" class="givit">PROJECTS</h1>
 <div class="allproject">
   <div class="particularproject">
     <div class="prjname">
@@ -157,6 +160,24 @@
 
 </div>
 
+<div  id="githubstats">
+  <h1 class="givit">GITHUB STATS</h1>
+  <!-- Prepare a container for your calendar. -->
+<div class="calendar">
+    <!-- Loading stuff -->
+    Loading the data just for you.
+</div>
+</div>
+
+
+<h1 id="contact" class="givit">CONTACT ME</h1>
+<div id="contactme">
+  <h1 onclick="githubdir()" class="contactline">Github</h1>
+  <h1 onclick="linkedindir()" class="contactline">Linkedin</h1>
+  <h1 onclick="phonenumber()" class="contactline">7498241136</h1>
+  <h1 onclick="gmaildir()" class="contactline">bhiapatil@gmail.com</h1>
+</div>
+
 
 
 
@@ -166,4 +187,21 @@
 
  </body>
  <script src="index.js"></script>
+ <script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+<script>
+    GitHubCalendar(".calendar", "srjizhere");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "srjizhere", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "srjizhere", {
+       proxy (srjizhere) {
+         return fetch(`https://your-proxy.com/github?user=${srjizhere}`)
+       }
+    }).then(r => r.text())
+</script>
+
 </html>

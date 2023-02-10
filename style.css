@@ -17,7 +17,7 @@
   background-repeat: repeat-y;
   padding: 0 0%;
   position: relative;
-  border: 11px solid red;
+  /* border: 11px solid red; */
 }
 nav {
   display: flex;
@@ -68,6 +68,9 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 50%;
 }
+#infocont{
+  margin-bottom: 20px;
+}
 
 .text_box {
   position: relative;
@@ -112,12 +115,12 @@ nav ul li a:hover::after {
 }
 
 .main {
-  background-color: yellow;
+  /* background-color: yellow; */
   width: 90vw;
 }
 
 .infoContainer {
-  background-color: rgb(255, 0, 255);
+  /* background-color: rgb(255, 0, 255); */
   height: 58vh;
   width: 80vw;
   margin: auto;
@@ -141,7 +144,7 @@ nav ul li a:hover::after {
   font-size: 55px;
   font-weight: bold;
   font-family: "Fira Sans", sans-serif;
-  background-color: red;
+  /* background-color: red; */
 }
 .about {
   width: fit-content;
@@ -175,6 +178,8 @@ nav ul li a:hover::after {
 }
 .devpic img {
   height: 58vh;
+  border-radius: 14px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .header-area h2 {
@@ -302,6 +307,9 @@ a{
   text-decoration: none;
   color: #283c4697;
 }
+#githubstats{
+  margin-bottom: 10%;
+}
 .prjdesc>button:hover{
   color: rgba(8, 8, 20, 0.809);
   background-color: rgb(232, 244, 255);
@@ -309,4 +317,20 @@ a{
   transition: .34s ease-in-out;
   box-shadow: rgba(165, 165, 171, 0.342) 0px 7px 29px 0px;
 
+}
+#githubstats{
+  color: white;
+  font-stretch: expanded;
+}
+
+.contactline{
+  display: flex;
+  color: rgba(248, 239, 239, 0.957);
+  justify-content: center;
+  text-align: center;
+  padding: 1%;
+  margin-top: 5px;
+}
+.contactline:hover{
+color: green;
 }
