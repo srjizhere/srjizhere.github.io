@@ -68,9 +68,6 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 50%;
 }
-#infocont{
-  margin-bottom: 20px;
-}
 
 .text_box {
   position: relative;
@@ -116,7 +113,7 @@ nav ul li a:hover::after {
 
 .main {
   /* background-color: yellow; */
-  width: 90vw;
+  width: 100vw;
 }
 
 .infoContainer {
@@ -177,10 +174,10 @@ nav ul li a:hover::after {
   transition: 1s ease-in-out;
 }
 .devpic{
-  margin-left: 5px;
+  margin-right: 1%;
 }
 .devpic img {
-  height: 58vh;
+  width: 25vw;
   border-radius: 14px;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
