@@ -19,6 +19,15 @@
   position: relative;
   /* border: 11px solid red; */
 }
+.bag{
+  width: 100vw;
+}
+.bag svg{
+  width: 100%;
+  object-fit: contain;
+  border: 1px solid red;
+
+}
 nav {
   display: flex;
   z-index: 4;
