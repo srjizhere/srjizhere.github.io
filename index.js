@@ -1,49 +1,64 @@
-function resume(){
-    window.open("https://drive.google.com/file/d/1ITlXMR5ip-_ErtLaNShVX8u2ZkjUF7cK/view?usp=share_link")
+let i = 0;
+let txt = "NodeJS Backend Developer.";
+let speed = 75;
+
+typeWriter();
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("user-detail-name").style.color = "white";
+    document.getElementById("demo1").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  } else {
+    // reset the index when it reaches the end of the text
+    i = 0;
+    // clear the text
+    document.getElementById("demo1").innerHTML = "";
+    // make the recursive call
+    document.getElementById("user-detail-name").style.color = "#71e281";
+    setTimeout(typeWriter, speed);
+  }
 }
 
+var myNav = document.getElementById("nav-menu");
+var myNav2 = document.getElementById("main");
+window.onscroll = function () {
+  if (document.documentElement.scrollTop >= 15) {
+    myNav.classList.add("nav-colored");
+    myNav2.classList.add("nav-colored");
+    // myNav.classList.remove("nav-transparent");
+  } else {
+    // myNav.classList.add("nav-transparent");
+    myNav.classList.remove("nav-colored");
+    myNav2.classList.remove("nav-colored");
+  }
+};
 
+GitHubCalendar(".calendar", "srjizhere", {
+  responsive: true,
+  global_stats: false,
+  tooltips: true,
+});
 
+document.getElementById("resume-button-1").onclick = () => {
+  window.open(
+    "https://drive.google.com/file/d/1jAVNkEnHArRuRQZQQNAssEHqub5ECGJF/view?usp=share_link"
+  );
+};
 
+document.getElementById("resume-button-2").onclick = () => {
+  window.open(
+    "https://drive.google.com/file/d/1jAVNkEnHArRuRQZQQNAssEHqub5ECGJF/view?usp=share_link"
+  );
+};
 
-
-
-
-
-function fasionGithub(){
-    window.open("https://github.com/srjizhere/melodic-love-4895");
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.display = "none";
 }
-function fasiondeploy(){
-    window.open("https://melodic-churros-e6ddd9.netlify.app/");
-}
 
-
-function modesensGithub(){
-    window.open("https://github.com/srjizhere/divine-society-1574");
-}
-function modsensdeploy(){
-    window.open("https://superlative-moxie-f98da0.netlify.app/");
-}
-function bellavitaGithub(){
-    window.open("https://github.com/Rafayal383/dreary-hand-8237");
-}
-function bellavitaDeploy(){
-    window.open("https://sparkling-sable-5e1c8b.netlify.app/");
-}
-
-function githubdir(){
-    window.open("https://github.com/srjizhere")
-}
-function linkedindir(){
-    window.open("https://www.linkedin.com/in/srjizhere/")
-}
-function phonenumber(){
-    let no = document.getElementById('phno').innerText
-    navigator.clipboard.writeText(no)
-    alert("phone number copied ClipBoard")
-}
-function gmaildir(){
-    let no = document.getElementById('gmaildir').innerText
-    navigator.clipboard.writeText(no)
-    alert("Email address copied to Clipboard")
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.display = "block";
 }
