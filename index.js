@@ -1,23 +1,48 @@
 let i = 0;
-let txt = "NodeJS Backend Developer.";
-let speed = 75;
+let txt = [ "N", "o", "d","e","J",
+  "S",
+  " ",
+  "B",
+  "a",
+  "c",
+  "k",
+  "e",
+  "n",
+  "d",
+  " ",
+  `<br>`,
+  "D",
+  "e",
+  "v",
+  "e",
+  "l",
+  "o",
+  "p",
+  "e",
+  "r",
+  ".",
+];
+let speed = 110;
 
 typeWriter();
 
 function typeWriter() {
   if (i < txt.length) {
     document.getElementById("user-detail-name").style.color = "white";
-    document.getElementById("demo1").innerHTML += txt.charAt(i);
+    document.getElementById("demo1").innerHTML += txt[i];
     i++;
     setTimeout(typeWriter, speed);
   } else {
     // reset the index when it reaches the end of the text
     i = 0;
     // clear the text
-    document.getElementById("demo1").innerHTML = "";
+  //give the person time for reading whole text
+    setTimeout(() => {
+      document.getElementById("demo1").innerHTML = "";
+      document.getElementById("user-detail-name").style.color = "#71e281";
+      setTimeout(typeWriter, speed);
+    }, 1000);    
     // make the recursive call
-    document.getElementById("user-detail-name").style.color = "#71e281";
-    setTimeout(typeWriter, speed);
   }
 }
 
@@ -43,13 +68,13 @@ GitHubCalendar(".calendar", "srjizhere", {
 
 document.getElementById("resume-button-1").onclick = () => {
   window.open(
-    "https://drive.google.com/file/d/1jAVNkEnHArRuRQZQQNAssEHqub5ECGJF/view?usp=share_link"
+    "https://drive.google.com/file/d/1O-lfBU4tagBvP7lmPbfanhHmIctpKrLB/view?usp=sharing"
   );
 };
 
 document.getElementById("resume-button-2").onclick = () => {
   window.open(
-    "https://drive.google.com/file/d/1jAVNkEnHArRuRQZQQNAssEHqub5ECGJF/view?usp=share_link"
+    "https://drive.google.com/file/d/1O-lfBU4tagBvP7lmPbfanhHmIctpKrLB/view?usp=sharing"
   );
 };
 
