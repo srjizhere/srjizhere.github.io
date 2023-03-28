@@ -18,13 +18,13 @@
 </head>
 <body>
     <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
        <div>
-        <a href="#home" >Home</a>
-        <a href="#about"  >About</a>
-        <a href="#skills"  >Skills</a>
-        <a href="#projects" >Projects</a>
-        <a href="#contact"  >Contact</a>
+        <a href="#home" onclick="closeNav()">Home</a>
+        <a href="#about"  onclick="closeNav()">About</a>
+        <a href="#skills" onclick="closeNav()" >Skills</a>
+        <a href="#projects" onclick="closeNav()" >Projects</a>
+        <a href="#contact" onclick="closeNav()" >Contact</a>
         <a href="./img//Suraj_Patil_Resume.pdf"  download>Resume <i class="fa fa-download"></i></a>
     </div>
       </div>
@@ -122,9 +122,9 @@
         <p class="skills-card-name">MongoDB</p>
     </div>
     <div class="skills-card">
-        <img  class="skills-card-img" src="https://assets.stickpng.com/thumbs/584830b5cef1014c0b5e4a9c.png" alt="">
+        <img  class="skills-card-img"  src="./img/redis.png" alt="">
         
-        <p class="skills-card-name">Redis</p>
+        <p class="skills-card-name" style="padding-top: 12%;">Redis</p>
     </div>
     <div class="skills-card">
         <img  class="skills-card-img" src="https://chiranjeev-thapliyal.vercel.app/svg/git.svg" alt="">
@@ -147,101 +147,97 @@
 </div>
 
 <!-------------------------------- Project Section ---------------------------------------->
-
+<!-- Talk-e-time -->
    <div id="projects">
 
     <h2 class="mid">Projects</h2>
     <hr>
     <div>
-
-<div class="project-card" >
-      
-        <img src="./img/fasiontrez_prj.png" alt="">
-        <p class="project-title">BigBasket Inspired App</p>
+        <!-- takl e tive done -->
+        <div class="project-card" >
+            <img src="./img/Talk-a-tive - Google Chrome 17_03_2023 2_04_19 AM.png" alt="Talk-a-tiveimgSS">
+            <p class="project-title">Real-Time MERN chat app(Individual)</p>
+            <div class="project-description"> 
+                <p> <b> Talk-a-tive :</b> This is real time chat app ready to use</p>
+                <p><b> Features : </b> Login/Logout, SignUp, Search users, Add to group, remove from group,etc</p>
+            </div>
+            <div class="techstack">
+                <p><b>Tech Stack :</b></p>
+                <p class="project-tech-stack"> MongoDB, NodeJS, Sockets ExpressJS, HTML, CSS, JS, ReactJS</p>
+          
+        </div>
+        <div class="projectlinks">
+            <br>
+            <a target="_blank"  href="https://github.com/srjizhere/zonked-hall-6274" class="project-github-link">Github</a>
+            <a target="_blank" href="https://zonked-hall-6274.vercel.app/chats" class="project-deployed-link">Deployed</a>
+        </div>
+        </div>
+        <!-- takl e tive done -->
+        <!-- Fasion trendz deployed link remaining  -->
+        <div class="project-card" >
+            
+            <img src="./img/fasiontrez_prj.png" alt="">
+        <p class="project-title">Fashion Trendz E-commerce App(Group)</p>
         <div class="project-description"> 
-           <p> <b>BigBasket</b> is a popular e-commerce Website primarily for homegrocery products. </p>
-           <p><b> Features : </b> Offers over 14000 products with easy-to-choose options,
-            including vegetables, fruits, and household products
-            Option to create own personalized shopping list of
-            products.
-            Admin and user controllers.
-            Real-time passenger information. </p>
+           <p> <b>Fashion Trendz : </b> is a popular e-commerce Website primarily for fasion products </p>
+           <p><b> Features : </b> Buy and sell products related to fashion divided into many categories and also add to cart functionality </p>
         </div>
         <div class="techstack">
             <p><b>Tech Stack : </b>  </p>
-        <p class="project-tech-stack"> MongoDB, NodeJS, ExpressJS, HTML, CSS, JS, Bootstrap</p>
+        <p class="project-tech-stack"> MongoDB, NodeJS, ExpressJS, HTML, CSS, JS</p>
     </div>
     <div class="projectlinks">
         <br>
-        <a target="_blank" href="https://github.com/srjizhere/holistic-slip-8772" class="project-github-link">Github</a>
+        <a target="_blank" href="https://github.com/srjizhere/melodic-love-4895" class="project-github-link">Github</a>
         <a target="_blank" href="https://glittering-tulumba-9e422e.netlify.app/" class="project-deployed-link">Deployed</a>
     </div>
-    </div>
-
-    <div class="project-card" >
-        <img src="./img/bellavita.png" alt="">
-        <p class="project-title">AppleTv Inspired Clone</p>
-        <div class="project-description"> 
-           <p> <b>OverStock</b>  Apple TV+ is a streaming service from Apple. It features exclusive Apple Original shows and movies from some of the industry's top talent.</p>
-           <p><b> Features : </b> Apple TV app. Watch, rent or buy your favourite shows and movies all in one expertly curated app. ..Login/Logout, SignUp.
-            Admin and user controllers .
-            Real-time passenger
-            information..</p>
+</div>
+<!-- Fasion trendz deployed link remaining  -->
+<!-- Done bella vita -->
+<div class="project-card" >
+    <img src="./img/bellavita.png" alt="">
+    <p class="project-title">Bella vita Clone(Group)</p>
+    <div class="project-description"> 
+           <p> <b>OverStock</b>  This is a cloned website of Bellavita Organic , a digital first luxury yet affordable natural skincare brand in india</p>
+           <p><b> Features : </b> Login-signup, Add to cart ,Billing, payment</p>
         </div>
         <div class="techstack">
             <p><b>Tech Stack : </b>  </p>
-        <p class="project-tech-stack"> Bootstrap,API, HTML, CSS, JavaScript</p>
+            <p class="project-tech-stack"> HTML, CSS, JavaScript</p>
        
     </div>
     <div class="projectlinks">
         <br>
-        <a target="_blank" href="https://github.com/ankitsingh711/celestial-discussion-2014" class="project-github-link">Github</a>
-        <a target="_blank" href="https://peppy-cupcake-69ad38.netlify.app/index.html" class="project-deployed-link">Deployed</a>
+        <a target="_blank" href="https://github.com/Rafayal383/Bellavita-Organic-Cloned" class="project-github-link">Github</a>
+        <a target="_blank" href="https://sparkling-sable-5e1c8b.netlify.app" class="project-deployed-link">Deployed</a>
     </div>
-    </div>
-
-    <div class="project-card" >
-        <img src="./img/modsends.png" alt="">
-        <p class="project-title">DeskTime Clone </p>
-        <div class="project-description"> 
-            <p> <b> Expedia</b> DeskTime is a desktop and mobile time tracking app for companies and freelancers. It makes it easy to measure productivity, boost performance, track attendance, and effectively manage workflow.</p>
-            <p><b> Features : </b>A time tracker with additional workforce management, Landing page, Sign up and Login Page.
-                Support and About page features
+</div>
+<!-- Done bella vita -->
+<!-- Modesends done -->
+<div class="project-card" >
+    <img src="./img/modsends.png" alt="">
+    <p class="project-title">Modsends(Group) </p>
+    <div class="project-description"> 
+            <p> <b> Modsends : </b> A E-commmerce website where you can but products across different categories </p>
+            <p><b> Features : </b> Landing page, Sign up and Login Page, add to cart,  buy 
                 and functionalities.
                 </p>
-         </div>
+            </div>
         <div class="techstack">
             <p><b>Tech Stack :</b></p>
         <p class="project-tech-stack">HTML, CSS, JavaScript</p>
     </div>
     <div class="projectlinks">
         <br>
-        <a target="_blank" href="https://github.com/srjizhere/wasteful-distribution-8476" class="project-github-link">Github</a>
-        <a target="_blank" href="https://amazing-entremet-915bad.netlify.app" class="project-deployed-link">Deployed</a>
+        <a target="_blank" href="https://github.com/srjizhere/divine-society-1574" class="project-github-link">Github</a>
+        <a target="_blank" href="https://superlative-moxie-f98da0.netlify.app/" class="project-deployed-link">Deployed</a>
     </div>
     </div>
     
-    <div class="project-card" >
-        <img src="./img/Talk-a-tive - Google Chrome 17_03_2023 2_04_19 AM.png" alt="">
-        <p class="project-title">NXM Backend Project</p>
-        <div class="project-description"> 
-            <p> <b> OverStock</b> This is Complete Backend Project with all Functinality</p>
-            <p><b> Features : </b> Login/Logout, SignUp, MongoDB Atlas ,Different Routers for admin and Users</p>
-         </div>
-        <div class="techstack">
-            <p><b>Tech Stack :</b></p>
-        <p class="project-tech-stack"> MongoDB, NodeJS, ExpressJS, HTML, CSS, JS, Bootstrap</p>
-      
-    </div>
-    <div class="projectlinks">
-        <br>
-        <a target="_blank"  href="https://github.com/srjizhere/nxmbackend" class="project-github-link">Github</a>
-        <a target="_blank" href="https://lustrous-swan-b4b9fe.netlify.app/" class="project-deployed-link">Deployed</a>
-    </div>
-    </div>
-
+    
+    <!-- Modesends done -->
 </div>
-   </div>
+</div>
 
 <!-------------------------------- Github Section ---------------------------------------->
 
@@ -303,10 +299,10 @@
     </div>
     <div class="contactflex">
      
-     <a href=""> <p id="contact-phone"><i class="fa fa-phone"></i> 7771960361</p></a>
+     <a href=""> <p id="contact-phone"><i class="fa fa-phone"></i> 7498241136</p></a>
     </div>
     <div class="contactflex">  
-         <a target="_blank"  id="contact-email"><p><i class="fa fa-envelope"></i> manoharmeena245@gmail.com</p></a>
+         <a target="_blank"  id="contact-email"><p><i class="fa fa-envelope"></i> bhiapatil@gmail.com</p></a>
     </div>
     <p class="name"> &#60 Suraj Patil /></p> 
    </div>
