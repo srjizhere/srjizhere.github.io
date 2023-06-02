@@ -68,13 +68,13 @@ GitHubCalendar(".calendar", "srjizhere", {
 
 document.getElementById("resume-button-1").onclick = () => {
   window.open(
-    "https://drive.google.com/file/d/1O-lfBU4tagBvP7lmPbfanhHmIctpKrLB/view?usp=sharing"
+    "https://drive.google.com/file/d/1bKnGHZXRhqFHB7M2C5qD6eFmWago9KAF/view?usp=sharing"
   );
 };
 
 document.getElementById("resume-button-2").onclick = () => {
   window.open(
-    "https://drive.google.com/file/d/1O-lfBU4tagBvP7lmPbfanhHmIctpKrLB/view?usp=sharing"
+    "https://drive.google.com/file/d/1bKnGHZXRhqFHB7M2C5qD6eFmWago9KAF/view?usp=sharing"
   );
 };
 
