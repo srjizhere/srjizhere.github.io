@@ -1,14 +1,10 @@
 let i = 0;
-let txt = [ "N", "o", "d","e","J",
+let txt = [ "F", "u", "l","l"," ",
   "S",
-  " ",
-  "B",
+  "t",
   "a",
   "c",
   "k",
-  "e",
-  "n",
-  "d",
   " ",
   `<br>`,
   "D",
@@ -68,13 +64,13 @@ GitHubCalendar(".calendar", "srjizhere", {
 
 document.getElementById("resume-button-1").onclick = () => {
   window.open(
-    "https://drive.google.com/file/d/1bKnGHZXRhqFHB7M2C5qD6eFmWago9KAF/view?usp=sharing"
+    "https://drive.google.com/file/d/1wLRO85Y3cXvrL9jNLuyZkg3qMsDtLsqa/view?usp=sharing"
   );
 };
 
 document.getElementById("resume-button-2").onclick = () => {
   window.open(
-    "https://drive.google.com/file/d/1bKnGHZXRhqFHB7M2C5qD6eFmWago9KAF/view?usp=sharing"
+    "https://drive.google.com/file/d/1wLRO85Y3cXvrL9jNLuyZkg3qMsDtLsqa/view?usp=sharing"
   );
 };
 
